@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root{
+    --text-title:'Roboto Condensed', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+    background-color: #C6C6C6;
+}
+
+.options{
+    width: 220px;
+    height: 100vh;
+    background-color: black;
+    font-family: var(--text-title);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.options_struct{
+    width: 200px;
+    margin-top: 60px;
+}
+
+.appLink{
+    width: 140px;
+    height: 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom:10px;
+    transition: .2s ease-in-out;
+}
+
+.appLinkImg{
+    width: 4.5vh;
+}
+
+.appLinkTitle{
+    Color: white;
+    width: 30px;
+    margin-left:1.5rem;
+}
+
+.appLink:hover{
+    background-color: #D9D9D9;
+    border-radius: 80px;
+    width: 100%;
+    opacity: 0.8;
 }
